@@ -28,12 +28,12 @@ def generate_report(input):
     generated_output = generation(input, **config)[0]['generated_text']
     return generated_output
 
-st.title('Генерация аннотации и введения для КНИР')
-
 st.set_page_config(
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="expanded"
 )
+
+st.title('Генерация аннотации и введения для КНИР')
 
 input_text = st.text_area('Введите стартовую фразу:', '', height=200, key='example_text')
 
